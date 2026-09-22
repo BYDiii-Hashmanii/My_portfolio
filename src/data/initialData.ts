@@ -1,0 +1,392 @@
+import { PortfolioData } from '../types';
+
+export const initialPortfolioData: PortfolioData = {
+  profile: {
+    name: "Obaid",
+    title: "Principal Solutions Architect & Technology Partner",
+    roleSubtitle: "Enterprise Web Architecture | AI & Workflow Automation | Cross-Platform Mobile",
+    valueProposition: "We architect high-performance web platforms, autonomous AI workflows, and cross-platform mobile solutions that solve complex operational bottlenecks for international businesses.",
+    bio: "We provide end-to-end digital engineering and AI solutions tailored for international businesses, high-growth ventures, and modern enterprises. Our practice unites modern web architecture (Next.js, React, TypeScript), enterprise AI integration (autonomous LLM agents, RAG pipelines, ERP/CRM workflow automation), and robust cross-platform mobile development (React Native). We design and deliver production-grade systems engineered for measurable commercial impact, sub-second speeds, and global scalability.",
+    story: "Our practice is built on solving real operational bottlenecks for international businesses. From architecting end-to-end property dealer platforms and dental clinic booking systems to deploying self-learning customer service AI co-pilots and offline-first mobile apps, we bridge commercial business strategy with rigorous system engineering.",
+    drive: "We are dedicated to building enduring digital infrastructure that creates lasting business leverage — eliminating repetitive operational friction, accelerating conversion, and empowering international organizations to scale efficiently.",
+    email: "obaidr047@gmail.com",
+    location: "Islamabad, Pakistan (Worldwide Remote Delivery)",
+    availability: "Accepting international client engagements & enterprise contracts",
+    profilePictureUrl: "/profile.jpg",
+    yearsExperience: 3,
+    completedProjects: 35,
+    clientSatisfaction: 99,
+    hoursAutomated: 12500,
+    socials: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com"
+    }
+  },
+  services: [
+    {
+      id: "srv-web",
+      title: "Website Development",
+      category: "Web",
+      description: "Custom, ultra-fast web applications, high-converting property dealer platforms, dental clinic booking systems, and business portals crafted with modern frameworks and flawless UX.",
+      accent: "blue",
+      features: [
+        "Modern Next.js / React architectures with sub-second performance",
+        "Interactive listing portals, dynamic filters, and booking calendars",
+        "Semantic SEO structure, OpenGraph cards & JSON-LD schemas",
+        "Full WCAG 2.1 AA accessibility and cross-device responsiveness"
+      ],
+      techTags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
+      iconName: "Globe"
+    },
+    {
+      id: "srv-ai",
+      title: "AI Integration & Automation",
+      category: "AI",
+      description: "Production-grade AI chatbots, context-aware RAG pipelines, and automated multi-agent workflows that eliminate manual administrative drag.",
+      accent: "emerald",
+      features: [
+        "Custom conversational AI assistants & domain knowledge chatbots",
+        "End-to-end workflow automation (n8n, Zapier, custom Node agents)",
+        "Document parsing, OCR, entity extraction & CRM auto-sync",
+        "LLM guardrails, streaming responses & latency optimization"
+      ],
+      techTags: ["Gemini 1.5/2.0", "OpenAI / Claude", "LangChain", "Vector DBs", "n8n", "Node.js"],
+      iconName: "Cpu"
+    },
+    {
+      id: "srv-mobile",
+      title: "Mobile App Development",
+      category: "Mobile",
+      description: "Fluid, cross-platform mobile apps for iOS and Android powered by React Native, native bridging, and offline-first local persistence.",
+      accent: "blue",
+      features: [
+        "Single codebase powering native iOS and Android experiences",
+        "60fps gesture-driven animations and responsive haptics",
+        "Offline synchronization, biometric security & push notifications",
+        "App Store & Google Play automated CI/CD deployment pipelines"
+      ],
+      techTags: ["React Native", "Expo", "TypeScript", "Redux/Zustand", "iOS", "Android"],
+      iconName: "Smartphone"
+    }
+  ],
+  projects: [
+    {
+      id: "proj-property",
+      title: "Property Dealer & Real Estate Platform",
+      category: "Web",
+      tagline: "Modern real estate dealer portal with interactive listings, virtual tours & broker CRM",
+      description: "A comprehensive real estate & property dealer web platform created for property agencies and independent brokers. Features instantaneous listing filtering by price, location, property type, and square footage, high-definition photo galleries, embedded 360° virtual tours, interactive Google Maps neighborhood exploration, integrated mortgage repayment calculator, and direct 1-click WhatsApp/email broker inquiry routing.",
+      problem: "Property agencies struggled with static PDF catalogs, slow mobile response times, and unorganized inquiry leads, leading to lost sales opportunities with high-intent home buyers.",
+      solution: "Designed and built an ultra-fast property dealer portal with real-time database filtering, responsive media carousels, video walkthrough embeds, dynamic mortgage calculators, and direct agent inquiry scheduling.",
+      techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
+      results: [
+        "3.2x increase in qualified property viewing inquiries",
+        "Sub-second listing filter speeds across 2,500+ properties",
+        "65% of buyer leads captured through automated instant broker WhatsApp routing"
+      ],
+      liveUrl: "https://example.com/property-dealer-platform",
+      githubUrl: "https://github.com/obaid/property-dealer-platform",
+      imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      featured: true,
+      metrics: {
+        label: "Lead Inquiries",
+        value: "+320%"
+      },
+      createdAt: "2026-03-01"
+    },
+    {
+      id: "proj-dental",
+      title: "Dental Clinic & Orthodontics Platform",
+      category: "Web",
+      tagline: "Patient appointment scheduling, smile transformation gallery & clinical care portal",
+      description: "A patient-centric modern dental clinic web application designed for comprehensive dental practices. Features online appointment self-scheduling with real-time chair availability, interactive smile transformation before-and-after visual sliders, complete dental service guides (cosmetic dentistry, orthodontics, implants, pediatric care), verified doctor credentials, and emergency one-click triage booking.",
+      problem: "The dental clinic reception was overwhelmed by phone calls for routine appointment bookings and reschedule inquiries, while prospective patients had no visual way to explore treatment transformations.",
+      solution: "Engineered a responsive clinic web application featuring automated patient booking with calendar synchronization, interactive visual treatment case studies, patient testimonials, and automated appointment reminders.",
+      techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "Calendar API"],
+      results: [
+        "78% of routine dental visits booked online without phone assistance",
+        "45% reduction in appointment no-shows via automated SMS notifications",
+        "Over 200+ verified 5-star patient reviews showcased"
+      ],
+      liveUrl: "https://example.com/dental-clinic-portal",
+      githubUrl: "https://github.com/obaid/dental-clinic-web",
+      imageUrl: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      featured: true,
+      metrics: {
+        label: "Online Bookings",
+        value: "78%"
+      },
+      createdAt: "2026-03-01"
+    },
+    {
+      id: "proj-1",
+      title: "OmniFlow AI - Customer Support Co-Pilot",
+      category: "AI",
+      tagline: "Autonomous customer inquiry triage & resolution pipeline",
+      description: "An enterprise customer service AI co-pilot that ingests knowledge bases, answers technical queries with citations, and executes automated Zendesk ticket resolutions.",
+      problem: "A SaaS client's support team was overwhelmed by 1,200+ repetitive daily support requests, causing 8-hour average response delays and agent burnout.",
+      solution: "Engineered an intelligent retrieval-augmented generation (RAG) assistant with streaming responses, automated fallback to human agents, and webhooks syncing CRM ticket updates.",
+      techStack: ["Next.js", "TypeScript", "Gemini API", "Vector Embeddings", "Tailwind CSS", "Node.js"],
+      results: [
+        "82% automated resolution for Tier-1 tickets",
+        "First-response time slashed from 8 hours to 12 seconds",
+        "$140,000 estimated annual support operational savings"
+      ],
+      liveUrl: "https://example.com/demo/omniflow",
+      githubUrl: "https://github.com/obaid/omniflow-ai",
+      imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80",
+      featured: true,
+      metrics: {
+        label: "Tickets Automated",
+        value: "82%"
+      },
+      createdAt: "2026-02-15"
+    },
+    {
+      id: "proj-2",
+      title: "PulseFit - Cross-Platform Fitness Companion",
+      category: "Mobile",
+      tagline: "React Native fitness tracker with real-time biometric metrics",
+      description: "A production mobile app deployed to Apple App Store and Google Play, featuring real-time workout logging, audio coaching cues, and HealthKit/Google Fit integration.",
+      problem: "Users struggled with bloated fitness apps that lacked reliable offline workout tracking in gyms with poor cellular reception.",
+      solution: "Developed an offline-first React Native architecture with WatermelonDB, native HealthKit/Google Fit bridges, and background syncing when connectivity resumes.",
+      techStack: ["React Native", "TypeScript", "HealthKit SDK", "Google Fit API", "Tailwind (NativeWind)", "Node.js"],
+      results: [
+        "4.8/5.0 average App Store rating across 4,200 reviews",
+        "Over 85,000 active monthly workout sessions logged",
+        "Zero data loss during offline gym tracking"
+      ],
+      liveUrl: "https://example.com/demo/pulsefit",
+      githubUrl: "https://github.com/obaid/pulsefit-mobile",
+      imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1000&q=80",
+      featured: true,
+      metrics: {
+        label: "Active Users",
+        value: "85k+"
+      },
+      createdAt: "2026-01-20"
+    },
+    {
+      id: "proj-4",
+      title: "DocuMind - Automated Invoice & OCR Pipeline",
+      category: "AI",
+      tagline: "AI document classification and accounting reconciliation agent",
+      description: "An automated processing engine that ingests incoming PDF invoices from email inboxes, validates line items using multimodal vision LLMs, and pushes entries directly into accounting systems.",
+      problem: "Accounting teams spent 35+ hours every week manually typing invoice details into accounting ledgers, causing regular transposition errors.",
+      solution: "Constructed an automated microservice that detects email attachments, performs structured OCR extraction with schema validation, and flags invoice discrepancies.",
+      techStack: ["Node.js", "TypeScript", "Gemini Vision", "Express", "n8n Automation", "Tailwind CSS"],
+      results: [
+        "100% elimination of manual data entry for 94% of standard invoices",
+        "Saved 35+ operational hours per week for finance staff",
+        "Zero tax filing discrepancies across two fiscal quarters"
+      ],
+      liveUrl: "https://example.com/demo/documind",
+      githubUrl: "https://github.com/obaid/documind-pipeline",
+      imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=80",
+      featured: false,
+      metrics: {
+        label: "Hours Saved / Wk",
+        value: "35 hrs"
+      },
+      createdAt: "2025-09-18"
+    },
+    {
+      id: "proj-5",
+      title: "NovaPay - Micro-Fintech Mobile Banking App",
+      category: "Mobile",
+      tagline: "Secure digital wallet with biometric verification & instant P2P transfers",
+      description: "A financial mobile application supporting multi-currency wallets, biometric face/touch authentication, QR-code peer-to-peer payments, and smart budgeting insights.",
+      problem: "Unbanked freelance contractors in emerging markets faced predatory fees and slow international settlement times.",
+      solution: "Created an intuitive React Native fintech client with hardware-backed keystore encryption, rapid QR transactions, and dark/light mode UI.",
+      techStack: ["React Native", "Expo", "TypeScript", "Node.js", "Zustand", "Tailwind"],
+      results: [
+        "$12M in peer-to-peer volume processed in first 6 months",
+        "SOC2 and PCI-DSS compliant security audit pass",
+        "99.98% crash-free user sessions"
+      ],
+      liveUrl: "https://example.com/demo/novapay",
+      githubUrl: "https://github.com/obaid/novapay-app",
+      imageUrl: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80",
+      featured: false,
+      metrics: {
+        label: "Crash-Free Rate",
+        value: "99.98%"
+      },
+      createdAt: "2025-07-04"
+    }
+  ],
+  blogs: [
+    {
+      id: "blog-1",
+      title: "Architecting Ultra-Fast Real Estate & Clinical Web Platforms",
+      slug: "architecting-fast-real-estate-clinical-web-platforms",
+      excerpt: "How to structure Next.js and React applications for high-traffic listing platforms and medical practices with sub-second page switches.",
+      content: `### High-Performance Web Architecture
+
+When developing web platforms like property dealer portals and clinic appointment systems, speed is directly tied to business revenue.
+
+#### 1. Zero-Flicker Search & Filter State
+Property portals require instant filtering across thousands of records. By offloading complex range filters to indexed PostgreSQL columns with debounced URL search parameters, visitors can bookmark and share filtered views with zero page reloads.
+
+#### 2. Visual Media Optimization
+Real estate and dental applications rely heavily on high-resolution photography. We utilize modern WebP formats, responsive picture elements with automated srcset, and lazy loading with blur-up placeholders to maintain 98+ Lighthouse scores.
+
+#### 3. Frictionless Conversion
+Instead of burying lead forms behind complex registration barriers, modern applications integrate direct 1-click WhatsApp messaging and real-time appointment calendar modals.`,
+      category: "Website Development",
+      tags: ["Next.js", "React", "Performance", "Web Development"],
+      readTime: "4 min read",
+      publishedAt: "2026-03-02",
+      coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
+      published: true,
+      author: "Obaid"
+    },
+    {
+      id: "blog-2",
+      title: "Building Production AI Chatbots That Actually Save Work Hours",
+      slug: "building-production-ai-chatbots",
+      excerpt: "A practical guide to deploying RAG chatbots with strict guardrails, zero hallucination fallbacks, and CRM integration.",
+      content: `### Beyond Toy Demos: Real AI Business Value
+
+Most business chatbots fail because they treat LLMs as conversational toys rather than deterministic operational tools.
+
+#### 1. Grounded Context Retrieval
+A production chatbot should only answer based on curated organizational documentation. We implement hybrid keyword-semantic vector search with a strict similarity threshold.
+
+#### 2. Deterministic Action Triggers
+When a user requests a quote or reports an urgent issue, the assistant shouldn't just respond politely — it should emit structured JSON to trigger n8n webhooks, create CRM leads, and notify team members in real time.`,
+      category: "AI Integration",
+      tags: ["AI", "Gemini", "Automation", "Chatbots"],
+      readTime: "5 min read",
+      publishedAt: "2026-02-18",
+      coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80",
+      published: true,
+      author: "Obaid"
+    },
+    {
+      id: "blog-3",
+      title: "Offline-First Mobile Architecture in React Native",
+      slug: "offline-first-react-native-architecture",
+      excerpt: "Techniques for building resilient iOS and Android apps that remain fully operational without internet connectivity.",
+      content: `### The Offline Reality of Mobile Apps
+
+Mobile applications operate in elevators, basements, and rural regions where cellular data drops.
+
+#### 1. Local SQLite Synchronization
+By writing all user modifications directly to a local high-speed SQLite database, UI interactions are instantaneous.
+
+#### 2. Resilient Sync Queue
+Background tasks monitor network status and batch pending local transactions to the central cloud API using optimistic concurrency.`,
+      category: "Mobile Development",
+      tags: ["React Native", "Mobile", "TypeScript", "Offline-First"],
+      readTime: "6 min read",
+      publishedAt: "2026-01-25",
+      coverImage: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1000&q=80",
+      published: true,
+      author: "Obaid"
+    }
+  ],
+  skills: [
+    { id: "sk-1", name: "Next.js / React 19", category: "Frontend", proficiency: 96, years: 3 },
+    { id: "sk-2", name: "TypeScript & Strict Typing", category: "Frontend", proficiency: 95, years: 3 },
+    { id: "sk-3", name: "Tailwind CSS & Design Systems", category: "Frontend", proficiency: 98, years: 3 },
+    { id: "sk-4", name: "Responsive & Accessible UI (WCAG AA)", category: "Frontend", proficiency: 94, years: 3 },
+    { id: "sk-5", name: "Node.js & Express Architecture", category: "Backend", proficiency: 92, years: 3 },
+    { id: "sk-6", name: "PostgreSQL & Database Design", category: "Backend", proficiency: 90, years: 2 },
+    { id: "sk-7", name: "RESTful & GraphQL API Design", category: "Backend", proficiency: 93, years: 3 },
+    { id: "sk-8", name: "Docker & Cloud Deployments", category: "Backend", proficiency: 86, years: 2 },
+    { id: "sk-9", name: "Gemini 1.5/2.0 & LLM Integration", category: "AI & Automation", proficiency: 95, years: 2 },
+    { id: "sk-10", name: "RAG & Vector Embeddings", category: "AI & Automation", proficiency: 91, years: 2 },
+    { id: "sk-11", name: "Workflow Automation (n8n / Zapier)", category: "AI & Automation", proficiency: 94, years: 2 },
+    { id: "sk-12", name: "Document OCR & Multimodal Vision", category: "AI & Automation", proficiency: 89, years: 2 },
+    { id: "sk-13", name: "React Native & Expo", category: "Mobile", proficiency: 93, years: 2 },
+    { id: "sk-14", name: "Native iOS & Android Bridging", category: "Mobile", proficiency: 87, years: 2 },
+    { id: "sk-15", name: "Offline-First SQLite Storage", category: "Mobile", proficiency: 89, years: 2 },
+    { id: "sk-16", name: "App Store & Play Store CI/CD", category: "Mobile", proficiency: 91, years: 2 }
+  ],
+  certifications: [
+    {
+      id: "cert-1",
+      title: "AWS Certified Solutions Architect",
+      issuer: "Amazon Web Services",
+      issueDate: "2025",
+      badgeCode: "AWS-SAA-839201",
+      imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: "cert-2",
+      title: "Google Cloud Machine Learning Engineer",
+      issuer: "Google Cloud",
+      issueDate: "2025",
+      badgeCode: "GCP-MLE-482019",
+      imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: "cert-3",
+      title: "Meta Certified React Native Specialist",
+      issuer: "Meta",
+      issueDate: "2024",
+      badgeCode: "META-RN-99201",
+      imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: "cert-4",
+      title: "Generative AI Engineering with LLMs",
+      issuer: "DeepLearning.AI",
+      issueDate: "2024",
+      badgeCode: "DLAI-GENAI-1038",
+      imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  experience: [
+    {
+      id: "exp-1",
+      role: "Lead Full-Stack Developer & AI Specialist",
+      company: "Independent Tech & Consulting",
+      period: "2024 — Present",
+      location: "Islamabad, Pakistan (Remote)",
+      type: "Full-time",
+      description: "Directing and implementing production web applications, automated business platforms, and mobile apps for commercial clients.",
+      achievements: [
+        "Architected high-converting Property Dealer platform featuring real-time filters and broker CRM WhatsApp routing",
+        "Developed patient care and appointment booking web system for dental & orthodontics clinic reducing no-shows by 45%",
+        "Engineered autonomous AI customer support co-pilots and invoice OCR pipelines saving clients hundreds of work hours"
+      ],
+      tech: ["Next.js", "React", "TypeScript", "React Native", "Gemini API", "Tailwind CSS", "Node.js", "PostgreSQL"],
+      current: true
+    },
+    {
+      id: "exp-2",
+      role: "Full-Stack & Mobile Developer",
+      company: "Modern Web & Mobile Solutions",
+      period: "2023 — 2024",
+      location: "Islamabad, Pakistan",
+      type: "Full-time",
+      description: "Engineered scalable client applications across web and mobile platforms with strict focus on UI performance and offline capabilities.",
+      achievements: [
+        "Built cross-platform React Native fitness and tracking mobile applications deployed to App Store and Google Play",
+        "Optimized frontend web architectures achieving 95+ Core Web Vitals across major business portals",
+        "Implemented secure REST and GraphQL APIs backed by PostgreSQL and Redis caching"
+      ],
+      tech: ["React", "React Native", "TypeScript", "Node.js", "Express", "Tailwind CSS", "PostgreSQL"]
+    },
+    {
+      id: "exp-3",
+      role: "Associate Software Engineer",
+      company: "Digital Solutions Lab",
+      period: "2022 — 2023",
+      location: "Islamabad, Pakistan",
+      type: "Full-time",
+      description: "Built responsive frontend user interfaces, automated lead workflows, and customized business client websites.",
+      achievements: [
+        "Delivered reusable component libraries with React, TypeScript, and Tailwind CSS for client web platforms",
+        "Automated CRM sync, lead triage, and billing pipelines saving clients over 150+ monthly hours",
+        "Crafted accessible design systems adhering strictly to WCAG AA guidelines"
+      ],
+      tech: ["TypeScript", "React", "Node.js", "n8n", "Zapier", "Tailwind CSS"]
+    }
+  ]
+};
